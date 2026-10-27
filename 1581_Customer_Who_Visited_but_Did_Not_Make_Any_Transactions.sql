@@ -2,10 +2,7 @@
 SELECT
     customer_id,
     COUNT(customer_id) AS count_no_trans
-FROM
-    Visits
-    LEFT OUTER JOIN
-    Transactions
-    USING(visit_id)
+FROM Visits
+LEFT OUTER JOIN Transactions USING(visit_id)
 WHERE transaction_id IS NULL
-GROUP BY customer_id
+GROUP BY customer_id;
