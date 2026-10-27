@@ -1,3 +1,4 @@
+-- https://leetcode.com/problems/monthly-transactions-i/?envType=study-plan-v2&envId=top-sql-50
 SELECT
     DATE_FORMAT(trans_date, "%Y-%m") AS month,
     country,
